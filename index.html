@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nuestra historia</title>
+
+<style>
+
+body{
+background: black;
+color: white;
+font-family: Arial;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+flex-direction:column;
+text-align:center;
+margin:0;
+}
+
+input{
+padding:12px;
+border:none;
+border-radius:10px;
+margin-top:15px;
+}
+
+button{
+padding:12px 20px;
+border:none;
+border-radius:10px;
+margin-top:10px;
+cursor:pointer;
+}
+
+#mensaje{
+display:none;
+margin-top:30px;
+max-width:500px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>ACCESS REQUIRED</h1>
+
+<p>Ingresa la clave.</p>
+
+<input type="password" id="clave" placeholder="Código">
+
+<button onclick="verificar()">Desbloquear</button>
+
+<div id="mensaje">
+
+<h2>Sabía que lo descubrirías 💖</h2>
+
+<p>
+Si llegaste hasta aquí, significa que todavía sabes encontrarme incluso entre pistas y secretos.
+</p>
+
+<p>
+Tu siguiente destino te está esperando.
+</p>
+
+</div>
+
+<script>
+
+function verificar(){
+
+let clave = document.getElementById("clave").value;
+
+if(clave === "amor"){
+
+document.getElementById("mensaje").style.display = "block";
+
+}else{
+
+alert("Código incorrecto");
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
